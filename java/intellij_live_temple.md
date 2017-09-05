@@ -14,7 +14,7 @@ boolean invalid = $PARAM1$;
 // 2. 定义返回结果
 $PARAM2$ result = $PARAM3$;
 if (invalid){
-    LOGGER.warn("$METHODNAME$ 's param is invalid! $PARAMNAMES$ value: {}", JSON.toJavaString($PARAM4$));
+    LOGGER.info("$METHODNAME$ 's param is invalid! $PARAMNAMES$ value: {}", JSON.toJavaString($PARAM4$));
     return result;
 }
 // 3. 具体处理逻辑
@@ -29,4 +29,3 @@ return result;
 
 
 ```
-
